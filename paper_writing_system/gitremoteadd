@@ -1,0 +1,7 @@
+### 
+# 5. 원격 저장소 주소 등록 (ORIGIN_URL은 실제 GitHub 주소로 대체)
+git remote add origin https://github.com/사용자이름/레포지토리이름.git
+
+# 6. 로컬의 main 브랜치 내용을 원격 저장소(origin)로 전송
+# -u 옵션은 이후 git push만 입력해도 동작하도록 업스트림을 설정함
+git push -u origin main
