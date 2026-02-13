@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Taxonomy of Techniques</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+        }
+
+        .slide-container {
+            width: 1040px;
+            height: 720px;
+            position: relative;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        /* Template specific colors */
+        .text-template-blue { color: #005778; }
+        .text-template-gray { color: #585656; }
+        .text-template-green { color: #339966; }
+        .bg-template-green { background-color: #339966; }
+        .border-template-gray { border-color: #9e9e9e; }
+        
+        /* Custom box style matching template */
+        .content-box {
+            background-color: white;
+            border: 2px solid #9e9e9e;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .chart-legend-item {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            font-size: 14px;
+            color: #585656;
+        }
+        .chart-legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- ==================== BACKGROUND SHAPES ==================== -->
+<!-- Top Green Bars (Template Standard) -->
+<svg class="absolute left-0 top-[85.92px] w-[862.93px] h-[45.6px] z-10" preserveaspectratio="none" viewbox="0 0 8219440 434340">
+<path d="M 8218932 0 L 0 0 L 0 434339 L 8218932 434339 L 8218932 0 Z" fill="#339966"></path>
+</svg>
+<svg class="absolute left-[880.16px] top-[85.92px] w-[33.8px] h-[45.6px] z-10" viewbox="0 0 321945 434340">
+<path d="M 321564 0 L 0 0 L 0 434339 L 321564 434339 L 321564 0 Z" fill="#339966"></path>
+</svg>
+<svg class="absolute left-[931.2px] top-[85.92px] w-[33.93px] h-[45.6px] z-10" viewbox="0 0 323215 434340">
+<path d="M 323088 0 L 0 0 L 0 434339 L 323088 434339 L 323088 0 Z" fill="#339966"></path>
+</svg>
+<svg class="absolute left-[977.44px] top-[85.92px] w-[33.8px] h-[45.6px] z-10" viewbox="0 0 321945 434340">
+<path d="M 321564 0 L 0 0 L 0 434339 L 321564 434339 L 321564 0 Z" fill="#339966"></path>
+</svg>
+<!-- Background Arrow (Subtle) -->
+<svg class="absolute left-[40px] top-[220px] w-[650px] h-[420px] z-0 opacity-20" viewbox="0 0 6223000 4055745">
+<path d="M 0 0 L 6222492 3244291 L 0 4055745 Z" fill="#cae3f8"></path>
+</svg>
+<!-- ==================== HEADER CONTENT ==================== -->
+<div class="absolute left-[25px] top-[42px] z-20">
+<p class="font-sans text-[24px] font-bold text-template-gray">2. Taxonomy</p>
+</div>
+<div class="absolute left-[35px] top-[95px] z-20">
+<h1 class="font-sans text-[32px] font-bold text-template-blue leading-tight">주요 기술 분류 <span class="text-[24px] font-normal text-gray-500">(Taxonomy of Techniques)</span></h1>
+</div>
+<!-- ==================== MAIN CONTENT LAYOUT ==================== -->
+<div class="absolute left-[40px] top-[160px] w-[960px] h-[520px] z-30 flex">
+<!-- Left Column: Description Cards -->
+<div class="w-1/2 pr-8 flex flex-col justify-between h-full py-4">
+<!-- Card 1: Fine-tuning -->
+<div class="content-box p-5 rounded-lg relative overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+<div class="absolute top-0 left-0 w-2 h-full bg-template-blue"></div>
+<h3 class="font-bold text-[20px] text-template-blue mb-2 pl-2">1. Fine-tuning (파인 튜닝)</h3>
+<p class="text-[16px] text-gray-600 leading-snug pl-2">
+                        로그 데이터 특성에 맞춰 모델 가중치를 직접 조정합니다. <br/>
+<span class="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded mt-1 inline-block">High Accuracy</span>
+<span class="text-xs bg-red-100 text-red-800 px-2 py-0.5 rounded mt-1 inline-block">High Cost</span>
+</p>
+</div>
+<!-- Card 2: RAG -->
+<div class="content-box p-5 rounded-lg relative overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+<div class="absolute top-0 left-0 w-2 h-full bg-template-green"></div>
+<h3 class="font-bold text-[20px] text-template-green mb-2 pl-2">2. RAG (검색 증강 생성)</h3>
+<p class="text-[16px] text-gray-600 leading-snug pl-2">
+                        유사한 과거 로그나 매뉴얼을 검색하여 문맥을 보강합니다. <br/>
+<span class="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded mt-1 inline-block">Reliability</span>
+<span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded mt-1 inline-block">Mid Cost</span>
+</p>
+</div>
+<!-- Card 3: In-context Learning -->
+<div class="content-box p-5 rounded-lg relative overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+<div class="absolute top-0 left-0 w-2 h-full bg-yellow-500"></div>
+<h3 class="font-bold text-[20px] text-yellow-600 mb-2 pl-2">3. In-context Learning</h3>
+<p class="text-[16px] text-gray-600 leading-snug pl-2">
+                        별도 학습 없이 프롬프트 예시만으로 분석합니다. <br/>
+<span class="text-xs bg-purple-100 text-purple-800 px-2 py-0.5 rounded mt-1 inline-block">High Flexibility</span>
+<span class="text-xs bg-gray-100 text-gray-800 px-2 py-0.5 rounded mt-1 inline-block">Low Cost</span>
+</p>
+</div>
+</div>
+<!-- Right Column: Radar Chart -->
+<div class="w-1/2 flex flex-col items-center justify-center relative">
+<!-- Chart Title -->
+<div class="absolute top-0 right-0 bg-white px-4 py-2 border-b-2 border-gray-200">
+<span class="text-sm font-bold text-gray-500 uppercase tracking-wider">Comparative Analysis</span>
+</div>
+<div class="w-full h-[400px] mt-8">
+<canvas id="techniqueRadarChart"></canvas>
+</div>
+<!-- Custom Legend -->
+<div class="flex mt-4 justify-center w-full">
+<div class="chart-legend-item">
+<div class="chart-legend-color" style="background-color: rgba(0, 87, 120, 1);"></div>
+<span>Fine-tuning</span>
+</div>
+<div class="chart-legend-item">
+<div class="chart-legend-color" style="background-color: rgba(51, 153, 102, 1);"></div>
+<span>RAG</span>
+</div>
+<div class="chart-legend-item">
+<div class="chart-legend-color" style="background-color: rgba(245, 158, 11, 1);"></div>
+<span>In-context</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== FOOTER ==================== -->
+<div class="absolute left-[509px] top-[698px] z-50">
+<p class="font-sans text-[12px] text-template-gray">2</p>
+</div>
+<div class="absolute left-[960px] top-[649px] w-[69px] h-[53px] z-50">
+<img src="https://page.gensparksite.com/template_extract/4c46022c-0f82-497a-b3e1-82405e86674e/slide_3/shape_fill_master_8.png" style="width: 100%; height: 100%; object-fit: contain;"/>
+</div>
+</div>
+<script>
+        const ctx = document.getElementById('techniqueRadarChart').getContext('2d');
+        const radarChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['정확도 (Accuracy)', '비용 (Cost Efficiency)', '유연성 (Flexibility)'],
+                datasets: [{
+                    label: 'Fine-tuning',
+                    data: [9.5, 2, 3], // High Acc, Low Cost Eff (High Cost), Low Flex
+                    backgroundColor: 'rgba(0, 87, 120, 0.2)',
+                    borderColor: 'rgba(0, 87, 120, 1)',
+                    pointBackgroundColor: 'rgba(0, 87, 120, 1)',
+                    borderWidth: 2
+                }, {
+                    label: 'RAG',
+                    data: [7, 6, 6], // Mid Acc, Mid Cost, Mid Flex
+                    backgroundColor: 'rgba(51, 153, 102, 0.2)',
+                    borderColor: 'rgba(51, 153, 102, 1)',
+                    pointBackgroundColor: 'rgba(51, 153, 102, 1)',
+                    borderWidth: 2
+                }, {
+                    label: 'In-context Learning',
+                    data: [4, 9, 9], // Low Acc, High Cost Eff (Low Cost), High Flex
+                    backgroundColor: 'rgba(245, 158, 11, 0.2)',
+                    borderColor: 'rgba(245, 158, 11, 1)',
+                    pointBackgroundColor: 'rgba(245, 158, 11, 1)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false // Using custom legend
+                    }
+                },
+                scales: {
+                    r: {
+                        angleLines: {
+                            display: true,
+                            color: 'rgba(0, 0, 0, 0.1)'
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.1)'
+                        },
+                        pointLabels: {
+                            font: {
+                                size: 14,
+                                family: "'Noto Sans KR', sans-serif",
+                                weight: 'bold'
+                            },
+                            color: '#585656'
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 10,
+                        ticks: {
+                            display: false, // Hide numeric ticks for cleaner look
+                            stepSize: 2
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

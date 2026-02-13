@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LLM 기반 이벤트 로그 분석 기술 동향</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;family=Black+Han+Sans&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        
+        .slide-container {
+            width: 1040px;
+            height: 720px;
+            background-color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        .absolute-element {
+            position: absolute;
+            display: block;
+        }
+        
+        .main-title {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 900;
+            color: #005778;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 500;
+            color: #585656;
+        }
+
+        .meta-info {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+            color: #9c9a9a;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- 
+           MASTER SLIDE ELEMENTS
+           Background design elements from template
+        -->
+<!-- Top Green Shapes (Header Decoration from master) -->
+<div class="absolute-element" style="left: 0px; top: 0px; width: 100%; height: 25px; background-color: #339966; opacity: 0.1;"></div>
+<!-- 
+            Shape 4: Gray Horizontal Bar
+            Original template element adapted
+        -->
+<svg class="absolute-element" preserveaspectratio="none" style="left: 100px; top: 260px; width: 840px; height: 8px; z-index: 4;" viewbox="0 0 840 8">
+<rect fill="#878687" height="8" width="840"></rect>
+</svg>
+<!-- 
+            Logo Area
+            Using FontAwesome icon as a placeholder for the whale logo concept from the template
+            to maintain the "Minimalist Professional" feel
+        -->
+<div class="absolute-element" style="left: 100px; top: 200px; z-index: 202; display: flex; align-items: center;">
+<div style="background-color: #005778; width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 15px;">
+<i class="fas fa-shield-alt text-white text-2xl"></i>
+</div>
+<p class="text-2xl font-bold text-[#585656]" style="font-family: 'Black Han Sans', sans-serif;">Security Insight</p>
+</div>
+<!-- 
+            Main Content Title & Info
+            Replacing the image-based content from the original template with editable HTML text
+        -->
+<div class="absolute-element" style="left: 100px; top: 320px; width: 840px; height: 300px; z-index: 203;">
+<!-- Main Title -->
+<h1 class="main-title text-6xl mb-6 tracking-tight">
+                LLM 기반<br/>
+                이벤트 로그 분석<br/>
+                기술 동향
+            </h1>
+<!-- Subtitle -->
+<div class="flex items-center mb-8">
+<div class="h-12 w-1 bg-[#339966] mr-4"></div>
+<p class="subtitle text-2xl">
+                    보안 전문가의 수동 분석에서<br/>
+<span class="text-[#005778] font-bold">AI 자동화</span>로의 진화
+                </p>
+</div>
+<!-- Source Info -->
+<div class="meta-info text-lg mt-12 flex items-center">
+<i class="fas fa-file-alt mr-3 text-[#339966]"></i>
+<p>Based on: <strong>"LLM-based event log analysis techniques: A survey"</strong> (2025)</p>
+</div>
+<div class="meta-info text-base mt-2 flex items-center">
+<i class="fas fa-calendar-alt mr-3 text-[#339966]"></i>
+<p>2025-12-16</p>
+</div>
+</div>
+<!-- Decorative Element (Bottom Right) -->
+<div class="absolute-element" style="right: 50px; bottom: 50px; opacity: 0.1; z-index: 1;">
+<i class="fas fa-search text-[200px] text-[#005778]"></i>
+</div>
+</div>
+</body>
+</html>

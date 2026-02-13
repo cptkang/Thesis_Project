@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Slide 4 - Challenges</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;family=Arial:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .slide-container {
+            width: 1040px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Background Shapes (Green Bar) */
+        .background-shapes {
+            position: absolute;
+            top: 85.92px;
+            left: 0;
+            width: 100%;
+            height: 45.6px;
+            z-index: 1;
+            opacity: 0.2; 
+        }
+
+        /* Header Title */
+        .slide-title {
+            position: absolute;
+            top: 42.35px;
+            left: 25.09px;
+            width: auto;
+            color: #585656;
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            line-height: 1.0;
+            font-weight: bold;
+        }
+
+        /* Subtitle */
+        .slide-subtitle {
+            position: absolute;
+            top: 91.73px;
+            left: 35.02px;
+            color: #005778;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 21.33px;
+            font-weight: bold;
+        }
+
+        /* Main Content Area */
+        .content-area {
+            position: absolute;
+            top: 140px;
+            left: 35px;
+            width: 970px;
+            height: 500px;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Card Styling */
+        .challenge-card {
+            background-color: white;
+            border: 2px solid #E5E7EB;
+            border-top: 5px solid #005778;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .icon-circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #F0F9FF;
+            color: #005778;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            margin-bottom: 1rem;
+            border: 2px solid #005778;
+        }
+
+        /* Footer Elements */
+        .slide-number {
+            position: absolute;
+            left: 506px;
+            top: 698.45px;
+            font-family: 'Arial', sans-serif;
+            font-size: 12px;
+            color: #000000;
+            z-index: 201;
+        }
+
+        .logo-image {
+            position: absolute;
+            left: 960.55px;
+            top: 648.94px;
+            width: 68.74px;
+            height: 52.75px;
+            z-index: 8;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Background Shapes (Decorative Bar) -->
+<div class="background-shapes">
+<svg preserveaspectratio="none" style="position: absolute; left: 0px; top: 0px; width: 862.93px; height: 45.6px;" viewbox="0 0 8219440 434340">
+<path d="M 8218932 0 L 0 0 L 0 434339 L 8218932 434339 L 8218932 0 Z" fill="#339966"></path>
+</svg>
+<svg preserveaspectratio="none" style="position: absolute; left: 880.16px; top: 0px; width: 33.8px; height: 45.6px;" viewbox="0 0 321945 434340">
+<path d="M 321564 0 L 0 0 L 0 434339 L 321564 434339 L 321564 0 Z" fill="#339966"></path>
+</svg>
+<svg preserveaspectratio="none" style="position: absolute; left: 931.2px; top: 0px; width: 33.93px; height: 45.6px;" viewbox="0 0 323215 434340">
+<path d="M 323088 0 L 0 0 L 0 434339 L 323088 434339 L 323088 0 Z" fill="#339966"></path>
+</svg>
+<svg preserveaspectratio="none" style="position: absolute; left: 977.44px; top: 0px; width: 33.8px; height: 45.6px;" viewbox="0 0 321945 434340">
+<path d="M 321564 0 L 0 0 L 0 434339 L 321564 434339 L 321564 0 Z" fill="#339966"></path>
+</svg>
+</div>
+<!-- Header -->
+<div class="slide-title">4. Challenges</div>
+<div class="slide-subtitle">기술적 한계와 도전 과제</div>
+<!-- Main Content Area: Grid of Challenge Cards -->
+<div class="content-area">
+<div class="grid grid-cols-4 gap-6 w-full h-80">
+<!-- Card 1: High False Positive -->
+<div class="challenge-card">
+<div class="icon-circle">
+<i class="fas fa-exclamation-triangle"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-700 mb-2 font-noto">높은 오탐율<br/>(High False Positive)</h3>
+<p class="text-sm text-gray-500 font-noto leading-relaxed">
+                        LLM이 정상적인 변칙이나<br/>드문 로그를 위협으로 오인하여<br/>보안 관제 요원의<br/>피로도를 가중시킬 위험
+                    </p>
+</div>
+<!-- Card 2: Context Window -->
+<div class="challenge-card">
+<div class="icon-circle">
+<i class="fas fa-memory"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-700 mb-2 font-noto">컨텍스트 윈도우<br/>한계</h3>
+<p class="text-sm text-gray-500 font-noto leading-relaxed">
+                        한 번에 처리 가능한 토큰 제한.<br/>장기간에 걸친 패턴이나<br/>복잡한 시스템 간<br/>상관관계 파악의 어려움
+                    </p>
+</div>
+<!-- Card 3: Privacy -->
+<div class="challenge-card">
+<div class="icon-circle">
+<i class="fas fa-user-shield"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-700 mb-2 font-noto">데이터 프라이버시<br/>우려</h3>
+<p class="text-sm text-gray-500 font-noto leading-relaxed">
+                        민감한 내부 IP, 유저 정보가<br/>포함된 로그의 외부 유출 위험.<br/>클라우드 기반 LLM<br/>사용 시 보안 규정 준수 문제
+                    </p>
+</div>
+<!-- Card 4: High Cost -->
+<div class="challenge-card">
+<div class="icon-circle">
+<i class="fas fa-coins"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-700 mb-2 font-noto">높은 추론 비용<br/>(High Cost)</h3>
+<p class="text-sm text-gray-500 font-noto leading-relaxed">
+                        방대한 양의 실시간 로그를<br/>처리하기 위한 높은 연산 비용.<br/>상용 API 사용 시<br/>토큰 비용 부담 가중
+                    </p>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="slide-number">4</div>
+<img alt="Logo" class="logo-image" src="https://page.gensparksite.com/slides_images/9f1729eb8435439daebaec34b74ee415.png"/>
+</div>
+</body>
+</html>

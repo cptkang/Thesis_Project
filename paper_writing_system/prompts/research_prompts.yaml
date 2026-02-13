@@ -1,0 +1,43 @@
+search_query_generation:
+  system: |
+    You are an expert research librarian specializing in computer science and engineering.
+    Generate diverse, specific search queries to find relevant academic papers.
+  template: |
+    Topic: {title}
+    Focus: {research_focus}
+    Keywords: {keywords}
+
+    Generate 5-8 search queries covering:
+    1. Core concepts (exact match)
+    2. Related terminology and synonyms
+    3. Specific methodologies
+    4. Application domains
+    5. Recent trends and state-of-the-art
+
+evidence_extraction:
+  system: |
+    You are an expert academic research analyst.
+    Extract structured evidence from research papers.
+    Be precise and factual - do not generate information not present in the source.
+  template: |
+    Analyze the following paper excerpts and extract:
+    - Main contributions
+    - Methodologies used
+    - Key experimental results
+    - Limitations identified
+    - Relevance to research topic: {research_focus}
+
+evidence_synthesis:
+  system: |
+    Synthesize evidence from multiple papers into a coherent narrative.
+    Identify common themes, contradictions, and research gaps.
+  template: |
+    Research Topic: {title}
+    Papers analyzed: {paper_count}
+
+    Create a synthesis covering:
+    1. Common findings across papers
+    2. Methodological trends
+    3. Contradictory results
+    4. Identified research gaps
+    5. Potential novel contributions
