@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LLM 기반 네트워크 최적화</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&amp;family=Saira+Condensed:wght@400;600;700&amp;family=Noto+Sans+KR:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Raleway', 'Noto Sans KR', sans-serif;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            position: relative;
+            overflow: hidden;
+            background: white;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Gradient pattern removed per requirements, using solid subtle background instead */
+        .bg-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            opacity: 0.4;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        
+        /* Simulating dot pattern with simple small SVG or just keeping clean */
+        .dot-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(#e5e5e5 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.5;
+        }
+
+        .shape-top {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 45%;
+            height: 120px;
+            background-color: #ececec;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+            z-index: 1;
+        }
+        
+        .shape-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 15%;
+            height: 120px;
+            background-color: #ececec;
+            clip-path: polygon(0 0, 100% 100%, 0 100%);
+            z-index: 1;
+        }
+        
+        .tech-pill {
+            background-color: transparent;
+            border: 2px solid #000000;
+            border-radius: 9999px;
+            padding: 0.5rem 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #000000;
+            font-family: 'Saira Condensed', 'Noto Sans KR', sans-serif;
+        }
+        
+        .nav-arrow {
+            background-color: #000000;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            font-family: 'Saira Condensed', 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            color: #000000;
+            font-size: 4.5rem; /* Adjusted for Korean text length */
+            line-height: 1.1;
+            letter-spacing: -1px;
+        }
+        
+        .body-text {
+            font-family: 'Raleway', 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+            color: #333333;
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+
+        .list-item-title {
+            font-weight: 700;
+            color: #000000;
+            font-family: 'Saira Condensed', 'Noto Sans KR', sans-serif;
+            font-size: 1.25rem;
+        }
+        
+        .icon-container {
+            position: relative;
+            width: 420px;
+            height: 420px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        
+        .illustration-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: grayscale(100%) contrast(110%); /* Matching template monochrome style */
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Background Elements -->
+<div class="bg-pattern"></div>
+<!-- Replaced gradient with static pattern for compatibility -->
+<div style="position: absolute; width: 100%; height: 100%; background-image: radial-gradient(circle, #e5e5e5 1px, transparent 1px); background-size: 20px 20px; opacity: 0.6;"></div>
+<div class="shape-top"></div>
+<div class="shape-bottom"></div>
+<!-- Branding -->
+<div class="absolute top-8 left-10 z-20">
+<div class="tech-pill">
+            INTELLIGENT NETWORK
+        </div>
+</div>
+<!-- Main Content -->
+<div class="z-10 px-20 pt-32 flex flex-1 w-full h-full">
+<!-- Left Side: Content -->
+<div class="w-7/12 pr-12 flex flex-col justify-center">
+<h2 class="section-title mb-8">LLM 기반<br/>네트워크 최적화</h2>
+<div class="body-text space-y-6">
+<div class="flex items-start">
+<div class="mr-4 mt-1 text-black">
+<i class="fas fa-route text-xl"></i>
+</div>
+<div>
+<p class="list-item-title">적응형 라우팅 (Adaptive Routing)</p>
+<p>트래픽 혼잡도와 지연 시간을 실시간으로 분석하여 동적으로 최적의 경로를 산출하고 제어 정책에 즉시 반영합니다.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="mr-4 mt-1 text-black">
+<i class="fas fa-network-wired text-xl"></i>
+</div>
+<div>
+<p class="list-item-title">리소스 오케스트레이션</p>
+<p>6G 및 엣지 컴퓨팅 환경의 제한된 대역폭과 컴퓨팅 자원을 애플리케이션 요구사항(SLA)에 맞춰 효율적으로 배분합니다.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="mr-4 mt-1 text-black">
+<i class="fas fa-brain text-xl"></i>
+</div>
+<div>
+<p class="list-item-title">강화학습(RL) 결합 &amp; 폐루프 제어</p>
+<p>LLM이 보상 함수를 설계하여 학습 효율을 높이고, [관측-추론-정책-검증]의 순환 구조를 통해 자율 운영을 실현합니다.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Illustration -->
+<div class="w-5/12 flex items-center justify-center relative">
+<!-- Decorative circle behind image -->
+<div class="absolute rounded-full bg-gray-100" style="width: 380px; height: 380px; z-index: -1;"></div>
+<div class="icon-container">
+<!-- Using a tech/network related illustration placeholder from the style -->
+<img alt="Network Optimization AI" class="illustration-image" src="https://page.gensparksite.com/v1/base64_upload/29d5a54d542c5319ae1d16b9f940a7d4"/>
+</div>
+</div>
+</div>
+<!-- Navigation -->
+<div class="absolute bottom-8 right-10 z-20">
+<div class="nav-arrow">
+<i class="fas fa-chevron-right text-white text-xl"></i>
+</div>
+</div>
+</div>
+</body>
+</html>

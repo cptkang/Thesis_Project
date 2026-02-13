@@ -1,0 +1,46 @@
+consistency_check:
+  system: |
+    Check for logical consistency across the paper.
+    Identify contradictions, unsupported claims, and logical gaps.
+  criteria:
+    - "Claims supported by evidence"
+    - "No contradictions between sections"
+    - "Methodology matches claimed approach"
+    - "Results align with experimental setup"
+    - "Conclusion reflects actual findings"
+
+citation_verification:
+  system: |
+    Verify citation accuracy and completeness.
+  criteria:
+    - "All cited works appear in references"
+    - "Citations support the claims they accompany"
+    - "No fabricated references"
+    - "Citation format is consistent"
+    - "Key related works are not missed"
+
+quality_assessment:
+  system: |
+    Assess academic writing quality.
+  criteria:
+    - "Formal academic tone"
+    - "Clear and precise language"
+    - "Proper technical terminology"
+    - "Logical flow between paragraphs"
+    - "Appropriate section length"
+    - "No informal expressions"
+
+plagiarism_check:
+  system: |
+    Assess potential plagiarism risks.
+  criteria:
+    - "Content is sufficiently paraphrased"
+    - "Direct quotes are properly attributed"
+    - "Ideas are synthesized, not copied"
+    - "Original analysis is present"
+
+scoring:
+  excellent: "0.8-1.0: Ready for submission with minor edits"
+  good: "0.6-0.8: Needs minor revisions"
+  fair: "0.4-0.6: Significant revisions required"
+  poor: "0.0-0.4: Major rewrite needed"

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Slide 5 - Conclusion</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;family=Arial:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .slide-container {
+            width: 1040px;
+            height: 720px;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        /* Template Specific Colors */
+        .text-template-blue { color: #005778; }
+        .text-template-green { color: #339966; }
+        .bg-template-green { background-color: #339966; }
+        .text-template-grey { color: #585656; }
+        .border-template-green { border-color: #339966; }
+        
+        /* Custom Arrow Shape */
+        .arrow-box {
+            position: relative;
+            background: #E8F5E9;
+            border: 2px solid #339966;
+        }
+        .arrow-box::after {
+            content: '';
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-left: 20px solid #339966;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header Title: 5. Conclusion -->
+<div style="position: absolute; left: 25.09px; top: 42.35px; width: 250px; height: 40px; z-index: 200;">
+<p class="font-bold text-template-grey" style="font-family: 'Arial', sans-serif; font-size: 24px; line-height: 1;">
+                5. <br/>Conclusion
+            </p>
+</div>
+<!-- Header Background Shapes (Green Bar) -->
+<svg preserveaspectratio="none" style="position: absolute; left: 0px; top: 85.92px; width: 862.93px; height: 45.6px; z-index: 1;" viewbox="0 0 8219440 434340">
+<path d="M 8218932 0 L 0 0 L 0 434339 L 8218932 434339 L 8218932 0 Z" fill="#339966" fill-opacity="0.15"></path>
+</svg>
+<!-- Decorative blocks on the right -->
+<svg preserveaspectratio="none" style="position: absolute; left: 880.16px; top: 85.92px; width: 33.8px; height: 45.6px; z-index: 1;" viewbox="0 0 321945 434340">
+<path d="M 321564 0 L 0 0 L 0 434339 L 321564 434339 L 321564 0 Z" fill="#339966" fill-opacity="0.15"></path>
+</svg>
+<svg preserveaspectratio="none" style="position: absolute; left: 931.2px; top: 85.92px; width: 33.93px; height: 45.6px; z-index: 1;" viewbox="0 0 323215 434340">
+<path d="M 323088 0 L 0 0 L 0 434339 L 323088 434339 L 323088 0 Z" fill="#339966" fill-opacity="0.15"></path>
+</svg>
+<svg preserveaspectratio="none" style="position: absolute; left: 977.44px; top: 85.92px; width: 33.8px; height: 45.6px; z-index: 1;" viewbox="0 0 321945 434340">
+<path d="M 321564 0 L 0 0 L 0 434339 L 321564 434339 L 321564 0 Z" fill="#339966" fill-opacity="0.15"></path>
+</svg>
+<!-- Main Content Area -->
+<div style="position: absolute; left: 35.02px; top: 91.73px; width: 973.87px; height: 600px; z-index: 202; display: flex; flex-direction: column;">
+<!-- Subtitle inside the bar -->
+<p class="font-bold text-template-blue mb-8 ml-1" style="font-size: 21.33px;">
+                Future Directions &amp; Research
+            </p>
+<!-- 1. Transition Diagram Section -->
+<div class="flex items-center justify-between w-full mb-10 px-4">
+<!-- Reactive (Past) -->
+<div class="flex flex-col items-center justify-center w-1/3 h-32 bg-gray-50 border-2 border-dashed border-gray-400 rounded-lg p-4 opacity-70">
+<p class="text-xl font-bold text-gray-500 mb-2">Reactive Analysis</p>
+<p class="text-sm text-gray-500 text-center">사후 분석 / 정적 패턴<br/>단순 장애 대응</p>
+<div class="mt-2 text-gray-400"><i class="fas fa-file-medical-alt fa-2x"></i></div>
+</div>
+<!-- Arrow / Transition -->
+<div class="flex flex-col items-center justify-center w-1/4">
+<div class="w-full h-2 bg-gradient-to-r from-gray-300 to-green-500 rounded-full mb-2 relative">
+<div class="absolute right-0 -top-1.5 w-0 h-0 border-t-8 border-b-8 border-l-12 border-l-green-500 border-t-transparent border-b-transparent"></div>
+</div>
+<div class="bg-white border-2 border-template-green rounded-full px-4 py-1 z-10 -mt-5 shadow-sm">
+<p class="text-sm font-bold text-template-green">Adaptive LLM Evolution</p>
+</div>
+</div>
+<!-- Proactive (Future) -->
+<div class="flex flex-col items-center justify-center w-1/3 h-36 bg-green-50 border-2 border-template-green rounded-lg p-4 shadow-md transform scale-105">
+<p class="text-xl font-bold text-template-green mb-2">Proactive Monitoring</p>
+<p class="text-sm text-template-blue text-center font-medium">사전 예방 / 동적 학습<br/>실시간 건전성 진단</p>
+<div class="mt-2 text-template-green animate-pulse"><i class="fas fa-heart-pulse fa-2x"></i></div>
+</div>
+</div>
+<!-- 2. Detailed Pillars Section -->
+<div class="grid grid-cols-3 gap-6 px-2">
+<!-- Pillar 1: Health Monitoring -->
+<div class="flex flex-col bg-white border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-template-blue mr-3">
+<i class="fas fa-stethoscope text-lg"></i>
+</div>
+<p class="font-bold text-template-blue text-lg">System Health<br/>Monitoring</p>
+</div>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        단순 장애 탐지를 넘어 시스템의 전반적인 건강 상태를 실시간으로 진단. 사후 대응(Reaction)에서 사전 예방(Prevention)으로의 패러다임 전환.
+                    </p>
+</div>
+<!-- Pillar 2: Dynamic Updating -->
+<div class="flex flex-col bg-white border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-template-green mr-3">
+<i class="fas fa-sync-alt text-lg"></i>
+</div>
+<p class="font-bold text-template-blue text-lg">Dynamic<br/>Updating</p>
+</div>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        매일 변화하는 공격 패턴과 로그 유형을 재학습 없이 반영. RAG 기반의 동적 인덱싱과 플러그인 지식 활용 메커니즘 개발.
+                    </p>
+</div>
+<!-- Pillar 3: Efficiency Optimization -->
+<div class="flex flex-col bg-white border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 mr-3">
+<i class="fas fa-bolt text-lg"></i>
+</div>
+<p class="font-bold text-template-blue text-lg">Efficiency<br/>Optimization</p>
+</div>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        성능은 유지하되 연산 비용을 획기적으로 낮춘 경량화 모델(Light-weight Models) 및 토큰 절감 프롬프트 엔지니어링 연구.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Footer Page Number -->
+<div style="position: absolute; left: 506px; top: 698.45px; width: 21.13px; height: 18.67px; z-index: 201; text-align: center; display: flex; justify-content: center; align-items: center;">
+<p style="font-family: 'Arial', sans-serif; font-size: 14px; color: #585656;">
+                5
+            </p>
+</div>
+<!-- Logo Image -->
+<img alt="Logo" src="https://page.gensparksite.com/slides_images/db9ef00422b5a6a6ebe1199d4cd82599.png" style="position: absolute; left: 960.55px; top: 648.94px; width: 68.74px; height: 52.75px; z-index: 8; object-fit: contain;"/>
+</div>
+</body>
+</html>

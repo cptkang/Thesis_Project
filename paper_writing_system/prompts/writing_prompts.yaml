@@ -1,0 +1,71 @@
+section_guidelines:
+  abstract:
+    word_count: "150-250"
+    structure:
+      - "Problem statement (1-2 sentences)"
+      - "Approach/methodology (1-2 sentences)"
+      - "Key results (1-2 sentences)"
+      - "Significance (1 sentence)"
+
+  introduction:
+    word_count: "500-800"
+    structure:
+      - "Background and context"
+      - "Problem statement and motivation"
+      - "Research gap"
+      - "Contributions (enumerate)"
+      - "Paper organization"
+
+  related_work:
+    word_count: "600-1000"
+    structure:
+      - "Thematic organization"
+      - "Critical analysis"
+      - "Evolution of ideas"
+      - "Differences from current work"
+      - "Limitations of existing approaches"
+
+  methodology:
+    word_count: "600-1000"
+    structure:
+      - "Problem formulation"
+      - "System architecture"
+      - "Component description"
+      - "Algorithm/process flow"
+      - "Theoretical analysis"
+
+  experiments:
+    word_count: "400-700"
+    structure:
+      - "Dataset/environment"
+      - "Implementation details"
+      - "Baselines"
+      - "Evaluation metrics"
+      - "Parameters"
+
+  results:
+    word_count: "500-800"
+    structure:
+      - "Main results"
+      - "Baseline comparison"
+      - "Analysis"
+      - "Strengths"
+      - "Limitations"
+
+  conclusion:
+    word_count: "200-400"
+    structure:
+      - "Summary"
+      - "Main contributions"
+      - "Key findings"
+      - "Future work (2-3 directions)"
+
+formatting:
+  ieee:
+    citation_style: "numbered [1]"
+    section_numbering: "Roman numerals (I, II, III)"
+    reference_format: "[N] Authors, \"Title,\" Journal/Conference, Year."
+  acm:
+    citation_style: "numbered [1]"
+    section_numbering: "Arabic numerals (1, 2, 3)"
+    reference_format: "[N] Authors. Title. Journal/Conference. Year."
